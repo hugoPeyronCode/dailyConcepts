@@ -6,24 +6,27 @@ struct BreathingView: View {
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     
     let circleColors: [Color] = [ .black,
-                                 .pink, .blue,
-                                 .indigo, .gray,
-                                 .mint,.teal,
-                                 .brown, .green]
+//                                 .pink, .blue,
+//                                 .indigo, .gray,
+//                                 .mint,.teal,
+//                                 .brown, .green
+    ]
     
     @State var randomColor: Color = .black
     
 
     var body: some View {
         GeometryReader { screen in
-            VStack {
+            
+            VStack(alignment: .center, spacing: 5) {
                 
                 Spacer()
                 
+                Text("Meditation")
+                    .font(.system(size: 31, weight: .bold, design: .serif))
+                
                 Text("Take some time for yourself...")
-                    .font(.system(.title2, design: .serif))
-                    .multilineTextAlignment(.center)
-                    .padding()
+                    .font(.system(size: 18, weight:  .thin, design: .serif))
                 
                 Spacer()
                 
@@ -89,20 +92,22 @@ struct BreathingCircle: View {
                 .scaleEffect(circleScale)
             
             
+            
+            
             Circle()
                 .stroke(circleColor)
                 .frame(width: circleSize)
                 .scaleEffect(circleScale)
-                .onAppear {
-                    withAnimation(animation) {
-                        circleScale = 3
-                        // wait 5 seconds here
-                    }
-                }
-                .animation(animation, value: circleScale)
 
         }
         .frame(width: 200, height: 200)
+        .onAppear {
+            withAnimation(animation) {
+                circleScale = 3
+                // wait 5 seconds here
+            }
+        }
+        .animation(animation, value: circleScale)
     }
 }
 

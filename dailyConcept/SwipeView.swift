@@ -26,10 +26,24 @@ struct SwipeView: View {
                 
                     } else {
                         ForEach(viewModel.concepts.indices, id: \.self) { index in
+                            
+                            if index % 10 == 0 && index != 0 {
+                                                                    
+                                BreathingView()
+                                    .frame(width: screen.size.width, height: screen.size.height)
+                                    .rotationEffect(Angle(degrees: -90))
+                                    .tag(index)
+                                
+
+                            }
+                            else {
+                                
                                 ConceptView(concept: viewModel.concepts[index])
                                     .frame(width: screen.size.width, height: screen.size.height)
                                     .rotationEffect(Angle(degrees: -90))
                                     .tag(index)
+                            }
+                            
                         }
                     }
                     

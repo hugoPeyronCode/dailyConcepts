@@ -10,6 +10,7 @@ import SwiftUI
 struct ContentView: View {
     
     @ObservedObject var viewModel = ConceptsViewModel()
+
     @State private var isPresenting = false
     @State private var selectedCategory: Category? = nil
     
