@@ -8,14 +8,53 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @ObservedObject var viewModel = ConceptsViewModel()
+    @State private var isPresenting = false
+    @State private var selectedCategory: Category? = nil
+    
+    
+    //Handle the model presentation state
+    
+    @State private var showingAllCategories = false
+    @State private var showingAllThemes = false
+    @State private var showingUserProfile = false
+    @State private var showingBuyPremium = false
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        ZStack {
+            if viewModel.concepts.isEmpty {
+                Text("loading")
+                    .onAppear() { viewModel.fetchData() }
+            } else {
+                    
+                    SwipeView(viewModel: viewModel)
+                    
+//                    CategoriesView(viewModel: viewModel)
+                    
+                VStack {
+                    BuyPremiumButton()
+                            .onTapGesture {
+                            showingBuyPremium = true
+                            // let appears the premium view
+                        }
+                    
+                    Spacer()
+                    
+                    BottomBar(
+                        showingAllCategories: $showingAllCategories,
+                        showingAllThemes: $showingAllThemes,
+                        showingUserProfile: $showingUserProfile
+                    )
+                }
+                .sheet(isPresented: $showingAllCategories) { CategoriesView(viewModel: viewModel) }
+                .sheet(isPresented: $showingAllThemes) { AllThemesView() }
+                .sheet(isPresented: $showingUserProfile) { UserProfileView() }
+                .sheet(isPresented: $showingBuyPremium) { BuyPremiumView() }
+
+                
+            }
         }
-        .padding()
     }
 }
 
@@ -24,3 +63,4 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+
