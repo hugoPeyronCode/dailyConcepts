@@ -18,7 +18,7 @@ struct SwipeView: View {
         GeometryReader { screen in
             
             ZStack {
-                
+            
                 TabView(selection: $currentPage) {
                     if viewModel.concepts.isEmpty {
                         Text("Loading...")
@@ -27,13 +27,20 @@ struct SwipeView: View {
                     } else {
                         ForEach(viewModel.concepts.indices, id: \.self) { index in
                             
+                            
+                            if index % 5 == 0 && index != 0 {
+                                QuizView(viewModel: QuizViewModel(concepts: viewModel.concepts))
+                                    .frame(width: screen.size.width, height: screen.size.height)
+                                    .rotationEffect(Angle(degrees: -90))
+                                    .tag(index)
+                            }
+                            
                             if index % 10 == 0 && index != 0 {
                                                                     
                                 BreathingView()
                                     .frame(width: screen.size.width, height: screen.size.height)
                                     .rotationEffect(Angle(degrees: -90))
                                     .tag(index)
-                                
 
                             }
                             else {

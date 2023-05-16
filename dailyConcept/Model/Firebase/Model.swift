@@ -10,7 +10,7 @@ import Firebase
 import FirebaseFirestore
 import FirebaseFirestoreSwift
 
-struct ConceptsFirebase: Identifiable, Codable {
+struct ConceptsFirebase: Identifiable, Codable, Equatable {
     @DocumentID var id: String?
     var title: String
     var keyPoints: [String]
@@ -20,3 +20,4 @@ struct ConceptsFirebase: Identifiable, Codable {
     var Quote: String
     var Category: String
 }
+

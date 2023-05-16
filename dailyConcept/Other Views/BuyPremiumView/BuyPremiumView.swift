@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct BuyPremiumView: View {
+    
+    @State private var buyButtonIsClicked = false
+    
     var body: some View {
         
         
@@ -43,9 +46,11 @@ struct BuyPremiumView: View {
                 .font(.system(size: 15, design: .rounded))
             
             
-            StandardButton(cornerRadius: 15, width: 300, height: 50, content: "Continue", fontSize: 22, isSelected: false, action: {})
+            StandardButton(cornerRadius: 15, width: 300, height: 50, content: "Continue", fontSize: 22, isSelected: false, action: {buyButtonIsClicked = true})
                 
         }
+        .sheet(isPresented: $buyButtonIsClicked) { ThanksForReachingView() }
+
         .padding()
     }
     

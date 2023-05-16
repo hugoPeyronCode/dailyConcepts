@@ -9,7 +9,19 @@ import SwiftUI
 
 struct AllThemesView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        workingOnIt
+
+    }
+    
+    var workingOnIt : some View {
+        VStack{
+            Image("brainy")
+                .resizable()
+                .frame(width: 200, height: 200)
+            Text("Working on it ;)")
+                .font(.system(size: 30, design: .serif))
+        }
     }
 }
 
