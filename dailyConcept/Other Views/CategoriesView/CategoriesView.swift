@@ -20,22 +20,22 @@ struct CategoriesView: View {
             ScrollView {
                 
                 VStack {
-                    
-                    
+                                                            
                     title
-                    
                     
                     categoriesGrid
                     
+//                    letsGoButton
                     
-                    makeYourOwnMix
-
-
+                    
                 }
             }
             
         }
         .navigationTitle("Categories")
+        .onAppear {
+            viewModel.selectedCategories = []
+        }
     }
     
     var title: some View {
@@ -44,17 +44,26 @@ struct CategoriesView: View {
             .padding()
     }
     
-    
     var categoriesGrid: some View {
-            LazyVGrid(columns: gridItems, spacing: 15) {
-                ForEach(Array(viewModel.uniqueCategories), id: \.self) { category in
-                    CategoryButton(content: category)
-                }
+        LazyVGrid(columns: gridItems, spacing: 15) {
+            CategoryButton(content: "All", isSelected: viewModel.selectedCategories.contains("All") , action: {
+                viewModel.selectedCategories = []
+            })
+            CategoryButton(content: "Favorites", isSelected: viewModel.selectedCategories.contains("Favorites"), action: {})
+            
+            ForEach(Array(viewModel.uniqueCategories), id: \.self) { category in
+                CategoryButton(content: category,
+                               isSelected: viewModel.selectedCategories.contains(category),
+                               action: {
+                        print(viewModel.selectedCategories)
+                        viewModel.selectedCategories.append(category)
+                    })
             }
-            .padding(.horizontal, 20)
+        }
+        .padding(.horizontal, 20)
     }
     
-    var makeYourOwnMix: some View {
+    var letsGoButton: some View {
         StandardButton(cornerRadius: 90,
                        width: 100,
                        height: 100,

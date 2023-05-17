@@ -10,9 +10,11 @@ import StoreKit
 
 struct ConceptFirstView: View {
     
-    var concept: ConceptsFirebase
+    var concept: Concepts
+    var size: CGFloat = 300
     @Environment(\.scenePhase) var scenePhase
     @State private var isShareSheetShowing = false
+    @State private var isKnowMoreSheetShowing = false
         
     var body: some View {
         
@@ -26,22 +28,38 @@ struct ConceptFirstView: View {
                     .font(.system(size: 31, weight: .bold, design: .serif))
                 
                 Spacer()
-                
+                    
                 Text("'\(concept.catchPhrase)'")
-                    .font(.system(size: 18, weight:  .thin, design: .serif))
-                
+                        .font(.system(size: 20, weight:  .thin, design: .serif))
+                            
                 Spacer()
                 
                 ZStack {
-                    imageFitContent(content: concept.title)
+                    Image(concept.image)
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: size, height: size)
 
                     Image(systemName: concept.image)
                         .font(.system(size: 150, weight: .ultraLight))
                 }
                                 
                 Spacer()
-                
+                                
                 HStack(spacing: 25){
+                    
+                    Button(action: {
+                        self.isKnowMoreSheetShowing.toggle()
+                    }) {
+                        VStack {
+                            Image(systemName: "plus.magnifyingglass")
+                        }
+
+                    }
+                    .sheet(isPresented: $isKnowMoreSheetShowing) {
+                        ConceptSecondView(concept: concept)
+                    }
+                    
                     
                     Button(action: {
                         self.isShareSheetShowing.toggle()
@@ -69,23 +87,15 @@ struct ConceptFirstView: View {
             .foregroundColor(.black.opacity(0.9))
             .padding(40)
             .frame(width: screen.size.width, height: screen.size.height)
+            
         }
     }
-    
-    func imageFitContent(content: String) -> some View {
-        var size: CGFloat = 300
-        if content == "Brainy" {  size = 200 }
-                
-        return Image(concept.image)
-                .resizable()
-                .scaledToFit()
-                .frame(width: size, height: size)
-        }
+
 }
 
 struct ConceptFirstView_Previews: PreviewProvider {
     static var previews: some View {
-        ConceptFirstView(concept: ConceptsFirebase(title: "Maslow Pyramid", keyPoints: ["1: some point", "2: some other points"], image: "invisible_hand", isFavorite: false, catchPhrase: "Some pyramid stuff by some economist", Quote: "Strong Faster better", Category: "Psychology"))
+        ConceptFirstView(concept: Concepts(title: "Maslow Pyramid", keyPoints: ["1: some point", "2: some other points"], image: "invisible_hand", catchPhrase: "Some pyramid stuff by some economist", Quote: "Strong Faster better", Category: "Psychology"))
     }
 }
 

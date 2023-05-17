@@ -6,18 +6,15 @@
 //
 
 import Foundation
-import Firebase
-import FirebaseFirestore
-import FirebaseFirestoreSwift
 
-struct ConceptsFirebase: Identifiable, Codable, Equatable {
-    @DocumentID var id: String?
+struct Concepts: Identifiable, Codable, Equatable {
+    var id = UUID()
     var title: String
     var keyPoints: [String]
     var image: String
-    var isFavorite: Bool
     var catchPhrase: String
     var Quote: String
     var Category: String
 }
+
 

@@ -9,7 +9,7 @@ import SwiftUI
 
 struct QuizView: View {
     
-    @StateObject var viewModel = QuizViewModel(concepts: [ConceptsFirebase]())
+    @StateObject var viewModel = QuizViewModel(concepts: [Concepts]())
     
     @State var selectedButton: String? = nil
     
@@ -81,7 +81,7 @@ struct QuizView: View {
 struct QuizView_Previews: PreviewProvider {
     static var previews: some View {
         
-        let mockConcept = ConceptsFirebase(
+        let mockConcept = Concepts(
             title: "Super Long text to test Maslow's Pyramid",
             keyPoints: [
                 "Origins: Conceived by psychologist Abraham Maslow in his 1943 paper, 'A Theory of Human Motivation.'",
@@ -90,7 +90,6 @@ struct QuizView_Previews: PreviewProvider {
                 "Interesting Facts: Despite its influence, Maslow never depicted his hierarchy as a pyramid. Others interpreted his work this way."
             ],
             image: "pyramid3",
-            isFavorite: false,
             catchPhrase: "A psychological model ranking human needs from basic survival to self-actualization in a five-tier pyramid.",
             Quote: "What a man can be, he must be. This need we call self-actualization.",
             Category: "Psychology"
