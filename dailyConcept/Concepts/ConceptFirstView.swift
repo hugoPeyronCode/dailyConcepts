@@ -11,7 +11,7 @@ import StoreKit
 struct ConceptFirstView: View {
     
     var concept: Concepts
-    var size: CGFloat = 300
+    var size: CGFloat = 220
     @Environment(\.scenePhase) var scenePhase
     @State private var isShareSheetShowing = false
     @State private var isKnowMoreSheetShowing = false
@@ -29,9 +29,9 @@ struct ConceptFirstView: View {
                 
                 Spacer()
                     
-                Text("'\(concept.catchPhrase)'")
-                        .font(.system(size: 20, weight:  .thin, design: .serif))
-                            
+                Text("\(concept.catchPhrase)")
+                    .font(.system(size: 19, design: .serif))
+
                 Spacer()
                 
                 ZStack {
@@ -43,8 +43,12 @@ struct ConceptFirstView: View {
                     Image(systemName: concept.image)
                         .font(.system(size: 150, weight: .ultraLight))
                 }
+                .padding()
                                 
-                Spacer()
+                Text("\(concept.Quote)")
+                    .font(.footnote)
+                    .padding()
+                               
                                 
                 HStack(spacing: 25){
                     
@@ -79,13 +83,14 @@ struct ConceptFirstView: View {
                             }
                         }
                 }
+                .padding()
                 .font(.system(size: 30, weight: .light))
                 
                 Spacer()
                 
             }
             .foregroundColor(.black.opacity(0.9))
-            .padding(40)
+            .padding(25)
             .frame(width: screen.size.width, height: screen.size.height)
             
         }

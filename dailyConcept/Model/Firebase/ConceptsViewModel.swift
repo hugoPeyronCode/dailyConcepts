@@ -31,7 +31,7 @@ class ConceptsViewModel: ObservableObject {
                 "Interesting Facts: 'Game Theory is “the science of strategy”. - John Nash'",
             ],
             image: "game_theory",
-            catchPhrase:" Mathematical framework for deciphering scenarios where outcomes depend on choices of multiple players, not just luck.",
+            catchPhrase:"Mathematical framework for deciphering scenarios where outcomes depend on choices of multiple players, not just luck.",
             Quote: "'The only way to win is not to play. - WarGames (1983), a film that popularized the concept of game theory.",
             Category: "Economics"
         ),
