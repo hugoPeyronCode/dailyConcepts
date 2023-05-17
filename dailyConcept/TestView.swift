@@ -14,14 +14,6 @@ struct TestView: View {
     var body: some View {
         ScrollView {
                 VStack(spacing: 5) {
-                    
-                    NavigationView {
-                        // your existing views
-                        NavigationLink(destination: AddConceptView(viewModel: viewModel)) {
-                            Text("Add Concept")
-                        }
-                    }
-                    
                     Text("Unique categories")
                         .font(.title)
                     Text("Number of categories: \(viewModel.uniqueCategories.count)")
@@ -29,7 +21,6 @@ struct TestView: View {
                     ForEach (Array(viewModel.uniqueCategories), id: \.self) { category in
                         Text(category)
                     }
-                                        
                     Text("All concepts")
                         .font(.title)
                     Text("Number of concepts: \(viewModel.concepts.count)")
@@ -37,9 +28,6 @@ struct TestView: View {
                     ForEach(viewModel.concepts, id: \.id) { concept in
                         Text(concept.title)
                     }
-                }
-                .onAppear() {
-                    self.viewModel.fetchData()
                 }
         }
     }

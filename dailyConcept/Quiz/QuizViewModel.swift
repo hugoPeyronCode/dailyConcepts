@@ -11,13 +11,13 @@ import SwiftUI
 
 class QuizViewModel: ObservableObject {
         
-    @Published var possibleAnswers: [ConceptsFirebase]
-    @Published var correctAnswer: ConceptsFirebase?
+    @Published var possibleAnswers: [Concepts]
+    @Published var correctAnswer: Concepts?
     @Published var selectedAnswerTitle: String?
     
     @Published var arrayOfQuestions: [String] = []
     
-    init(concepts: [ConceptsFirebase]) {
+    init(concepts: [Concepts]) {
         let shuffledConcept = concepts.shuffled()
         self.possibleAnswers = shuffledConcept
         self.correctAnswer = shuffledConcept.randomElement()!

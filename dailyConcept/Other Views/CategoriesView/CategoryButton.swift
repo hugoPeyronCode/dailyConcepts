@@ -10,10 +10,12 @@ import SwiftUI
 struct CategoryButton: View {
     
     let content: String
-    
+    var isSelected: Bool
+    var action: () -> Void
+        
     var body: some View {
         
-        StandardButton(cornerRadius: 15, width: 150, height: 100, content: content, fontSize: 18, isSelected: false, action: {})
+        StandardButton(cornerRadius: 15, width: 150, height: 100, content: content, fontSize: 18, isSelected: isSelected, action: action)
         
     }
         
@@ -21,6 +23,6 @@ struct CategoryButton: View {
 
 struct CategoryButton_Previews: PreviewProvider {
     static var previews: some View {
-        CategoryButton(content: "Philosophy")
+        CategoryButton(content: "Philosophy", isSelected: false, action: {} )
     }
 }
