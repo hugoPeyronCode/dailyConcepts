@@ -31,7 +31,6 @@ struct BuyPremiumView: View {
                 .font(.system(size: 25, design: .serif))
                 .padding()
             
-            
             VStack(alignment: .leading, spacing: 10){
                 PremiumFeature(content: "Enjoy the full experience")
                 PremiumFeature(content: "Learn concepts your did not know")
@@ -45,8 +44,10 @@ struct BuyPremiumView: View {
             Text("Only 19,99 €/year")
                 .font(.system(size: 15, design: .rounded))
             
-            
-            StandardButton(cornerRadius: 15, width: 300, height: 50, content: "Continue", fontSize: 22, isSelected: false, action: {buyButtonIsClicked = true})
+            StandardButton(cornerRadius: 15, width: 300, height: 50, content: "Continue", fontSize: 22, isSelected: false, action: {
+                    IAPManager.shared.buyProduct("com.dailyConcept.1YearSubscription")
+                    buyButtonIsClicked.toggle()
+                })
                 
         }
         .sheet(isPresented: $buyButtonIsClicked) { ThanksForReachingView() }

@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import StoreKit
 
 struct ThanksForReachingView: View {
     var body: some View {

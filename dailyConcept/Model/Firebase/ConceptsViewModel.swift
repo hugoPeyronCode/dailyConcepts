@@ -97,7 +97,7 @@ class ConceptsViewModel: ObservableObject {
                 "Interesting Facts: 'The more bystanders present at an emergency, the less likely any one of them is to help.'",
             ],
             image: "bystander_effect",
-            catchPhrase: "More onlookers, less help? That's the paradox of the Bystander Effect.",
+            catchPhrase: "The social psychological phenomenon where individuals are less likely to offer help to a victim when there are other people present.",
             Quote: "'People are more likely to help when they are the only ones in the situation.' - Bibb Latané and John Darley",
             Category: "Psychology"
         ),
@@ -124,7 +124,7 @@ class ConceptsViewModel: ObservableObject {
                 "Implications: The allegory represents Plato's philosophical beliefs regarding the nature of reality, knowledge and enlightenment.",
                 "Interesting Facts: 'The Allegory of the Cave can be seen as a metaphor for the human condition itself.'",
             ],
-            image: "platos_allegory_of_the_cave",
+            image: "plato",
             catchPhrase: "Stuck seeing shadows? Step out of the cave to see the real world.",
             Quote: "'The things we see are like shadows cast by that which we do not see.' - Plato",
             Category: "Philosophy"
@@ -138,7 +138,7 @@ class ConceptsViewModel: ObservableObject {
                 "Implications: This principle remains a cornerstone of deontological moral philosophy.",
                 "Interesting Facts: 'Kant's moral philosophy is considered one of the most influential contributions to ethical theory.'",
             ],
-            image: "kants_categorical_imperative",
+            image: "kants_categorical",
             catchPhrase: "Act only as you would want all others to act, universally.",
             Quote: "'Act only according to that maxim whereby you can at the same time will that it should become a universal law.' - Immanuel Kant",
             Category: "Philosophy"
@@ -194,8 +194,8 @@ class ConceptsViewModel: ObservableObject {
                 "Implications: The theory has been influential in areas of sociology and psychology concerning self-perception and interpersonal relationships.",
                 "Interesting Facts: 'Cooley's work emphasized the societal, not individual, nature of human behavior.'"
             ],
-            image: "the_looking_glass_self_cooley",
-            catchPhrase: "Mirror, mirror on the wall, who am I after all?",
+            image: "looking_glass_self",
+            catchPhrase: "The social psychological concept that our self-image is shaped and reflected by how we think others perceive us.",
             Quote: "'I am not who you think I am; I am not who I think I am; I am who I think you think I am.' - Charles Horton Cooley",
             Category: "Sociology"
         ),
@@ -273,7 +273,7 @@ class ConceptsViewModel: ObservableObject {
         Concepts(
             title: "Shakespeare's Five Act Structure",
             keyPoints:  [],
-            image: "shakespeare_five_act_structure",
+            image: "five_act_structure",
             catchPhrase: "Classic dramatic structure: Exposition, Rising Action, Climax, Falling Action, Denouement.",
             Quote: "'All the world's a stage, And all the men and women merely players.' - William Shakespeare",
             Category: "Literature"
@@ -436,7 +436,7 @@ class ConceptsViewModel: ObservableObject {
         Concepts(
         title: "SWOT Analysis",
         keyPoints: [],
-        image: "swot_analysis",
+        image: "swot",
         catchPhrase: "Strategic planning technique used to identify Strengths, Weaknesses, Opportunities, and Threats.",
         Quote: "'However beautiful the strategy, you should occasionally look at the results.' - Winston Churchill",
         Category: "Business"
@@ -445,7 +445,7 @@ class ConceptsViewModel: ObservableObject {
         Concepts(
         title: "Porter's Five Forces",
         keyPoints: [],
-        image: "porter_five_forces",
+        image: "porters_five_forces",
         catchPhrase: "A framework for analyzing a firm's competitive environment, with five forces defining its attractiveness.",
         Quote: "'The essence of strategy is choosing what not to do.' - Michael Porter",
         Category: "Business"
@@ -454,7 +454,7 @@ class ConceptsViewModel: ObservableObject {
         Concepts(
         title: "The Four P's",
         keyPoints: [],
-        image: "four_ps",
+        image: "ps_of_marketing",
         catchPhrase: "A marketing model, the four Ps - Product, Price, Place, and Promotion - form the marketing mix.",
         Quote: "'Good marketing makes the company look smart. Great marketing makes the customer feel smart.' - Joe Chernov",
         Category: "Business"
@@ -988,7 +988,233 @@ class ConceptsViewModel: ObservableObject {
         catchPhrase: "A scientific theory describing the large-scale motion of seven large plates and the movements of a larger number of smaller plates of the Earth's lithosphere.",
         Quote: "'The history of any one part of the Earth, like the life of a soldier, consists of long periods of boredom and short periods of terror.' - Derek Ager",
         Category: "Geology"
+        ),
+        
+        Concepts(
+        title: "Four Color Theorem",
+        keyPoints: [],
+        image: "four_color_theorem",
+        catchPhrase: "A theorem in mathematics that states that, given any separation of a plane into contiguous regions, no more than four colors are required to color the regions of the map so that no two adjacent regions have the same color.",
+        Quote: "'We must know, we will know.' - David Hilbert",
+        Category: "Mathematics"
+        ),
+
+        Concepts(
+        title: "Non-Euclidean Geometry",
+        keyPoints: [],
+        image: "non_euclidean_geometry",
+        catchPhrase: "A form of geometry that deviates from the principles established by Euclid, involving concepts such as curved space.",
+        Quote: "'The straight line is the locus of a point whose direction does not change.' - Janos Bolyai",
+        Category: "Mathematics"
+        ),
+
+        Concepts(
+        title: "The Birthday Paradox",
+        keyPoints: [],
+        image: "birthday_paradox",
+        catchPhrase: "A probability theory which states that in a group of 23 people, there's a 50% chance that at least two people have the same birthday.",
+        Quote: "'In all things success depends on previous preparation, and without such previous preparation there is sure to be failure.' - Confucius",
+        Category: "Mathematics"
+        ),
+
+        Concepts(
+        title: "Blue Ocean Strategy",
+        keyPoints: [],
+        image: "blue_ocean_strategy",
+        catchPhrase: "A business strategy that targets untapped market space (the 'blue ocean'), rather than competing with other businesses in an existing industry (the 'red ocean').",
+        Quote: "'Competing in overcrowded industries is no way to sustain high performance.' - W. Chan Kim & Renée Mauborgne",
+        Category: "Business"
+        ),
+
+        Concepts(
+        title: "Total Quality Management",
+        keyPoints: [],
+        image: "total_quality_management",
+        catchPhrase: "A management approach that seeks to improve quality and performance to meet or exceed customer expectations.",
+        Quote: "'Quality is everyone's responsibility.' - W. Edwards Deming",
+        Category: "Business"
+        ),
+
+        Concepts(
+        title: "Business Model Canvas",
+        keyPoints: [],
+        image: "business_model_canvas",
+        catchPhrase: "A strategic management template for developing new or documenting existing business models.",
+        Quote: "'What we need to do is learn to work in the system, by which I mean that everybody, every team, every platform, every division, every component is there not for individual competitive profit or recognition, but for contribution to the system as a whole on a win-win basis.' - W. Edwards Deming",
+        Category: "Business"
+        ),
+
+        Concepts(
+        title: "Network Effect",
+        keyPoints: [],
+        image: "network_effect",
+        catchPhrase: "A phenomenon whereby a product or service gains additional value as more people use it.",
+        Quote: "'The value of a network is proportional to the square of the number of connected users of the system (n²).' - Bob Metcalfe",
+        Category: "Business"
+        ),
+
+        Concepts(
+        title: "Disruptive Innovation",
+        keyPoints: [],
+        image: "disruptive_innovation",
+        catchPhrase: "An innovation that creates a new market and value network and eventually disrupts an existing market and value network, displacing established market-leading firms, products, and alliances.",
+        Quote: "'Companies fail because they continue to invest in business models that are no longer relevant.' - Clayton M. Christensen",
+        Category: "Business"
+        ),
+
+        Concepts(
+        title: "Pareto Principle",
+        keyPoints: [],
+        image: "pareto_principle",
+        catchPhrase: "Also known as the 80/20 rule, it states that roughly 80% of the effects come from 20% of the causes.",
+        Quote: "'Efficiency is doing things right; effectiveness is doing the right things.' - Peter Drucker",
+        Category: "Business"
+        ),
+
+        Concepts(
+        title: "Six Sigma",
+        keyPoints: [],
+        image: "six_sigma",
+        catchPhrase: "A set of techniques and tools for process improvement, aiming to reduce variability in manufacturing and business processes.",
+        Quote: "'Quality starts in the boardroom.' - W. Edwards Deming",
+        Category: "Business"
+        ),
+
+        Concepts(
+        title: "Lean Manufacturing",
+        keyPoints: [],
+        image: "lean_manufacturing",
+        catchPhrase: "A systematic method for waste minimization within a manufacturing system without sacrificing productivity.",
+        Quote: "'Speed is useful only if you're running in the right direction.' - Joel Barker",
+        Category: "Business"
+        ),
+
+        Concepts(
+        title: "Servant Leadership",
+        keyPoints: [],
+        image: "servant_leadership",
+        catchPhrase: "A leadership philosophy in which the goal of the leader is to serve. This is different from traditional leadership where the leader's main focus is the thriving of their company or organizations.",
+        Quote: "'The best leaders are those most interested in surrounding themselves with assistants and associates smarter than they are.' - John C. Maxwell",
+        Category: "Leadership"
+        ),
+
+        Concepts(
+        title: "Bloom's Taxonomy",
+        keyPoints: [],
+        image: "blooms_taxonomy",
+        catchPhrase: "A set of three hierarchical models used to classify educational learning objectives into levels of complexity and specificity.",
+        Quote: "'Education is the process in which we discover that learning adds quality to our lives.' - William Glasser",
+        Category: "Education"
+        ),
+
+        Concepts(
+        title: "Multiple Intelligences Theory",
+        keyPoints: [],
+        image: "multiple_intelligences_theory",
+        catchPhrase: "A theory proposed by Howard Gardner suggesting that intelligence is not a single property of the mind, but consists of a set of multiple 'intelligences', each of which has its own particular set of abilities.",
+        Quote: "'Intelligence is the ability to find and solve problems and create products of value in one's own culture.' - Howard Gardner",
+        Category: "Psychology"
+        ),
+        
+        Concepts(
+        title: "Keynesian Economics",
+        keyPoints: [],
+        image: "keynesian_economics",
+        catchPhrase: "An economic theory stating that active government intervention in the marketplace and monetary policy is the best method of ensuring economic growth and stability.",
+        Quote: "'The long run is a misleading guide to current affairs. In the long run, we are all dead.' - John Maynard Keynes",
+        Category: "Economics"
+        ),
+
+        Concepts(
+        title: "Prisoner's Dilemma",
+        keyPoints: [],
+        image: "prisoners_dilemma",
+        catchPhrase: "A standard example of a game analyzed in game theory that shows why two completely rational individuals might not cooperate, even if it appears that it is in their best interest to do so.",
+        Quote: "'Rational behavior... depends on a large number of factors that are not directly observable.' - John Forbes Nash, Jr.",
+        Category: "Game Theory"
+        ),
+
+        Concepts(
+        title: "Tragedy of the Commons",
+        keyPoints: [],
+        image: "tragedy_of_the_commons",
+        catchPhrase: "A situation in a shared-resource system where individual users, acting independently according to their own self-interest, behave contrary to the common good of all users by depleting or spoiling the shared resource through their collective action.",
+        Quote: "'Every man is to be respected as an absolute end in himself; and it is a crime against the dignity that belongs to him as a human being, to use him as a mere means for some external purpose.' - Immanuel Kant",
+        Category: "Economics"
+        ),
+
+        Concepts(
+        title: "Hero's Journey",
+        keyPoints: [],
+        image: "heros_journey",
+        catchPhrase: "A common template of stories that involve a hero who goes on an adventure, is victorious in a crisis, and then comes home transformed.",
+        Quote: "'We must be willing to get rid of the life we've planned, so as to have the life that is waiting for us.' - Joseph Campbell",
+        Category: "Literature"
+        ),
+
+        Concepts(
+        title: "Infinity",
+        keyPoints: [],
+        image: "infinity",
+        catchPhrase: "A concept in many fields, most predominantly mathematics and physics, that refers to a quantity without bound or end.",
+        Quote: "'To see a world in a grain of sand and heaven in a wild flower Hold infinity in the palm of your hand and eternity in an hour.' - William Blake",
+        Category: "Mathematics"
+        ),
+
+        Concepts(
+        title: "Balance of Power",
+        keyPoints: [],
+        image: "balance_of_power",
+        catchPhrase: "A concept in international relations that suggests that national security is enhanced when military capability is distributed so that no one state is strong enough to dominate all others.",
+        Quote: "'We have learned that power does not necessarily mean security.' - Harry S. Truman",
+        Category: "Politics"
+        ),
+
+        Concepts(
+        title: "Amino Acid",
+        keyPoints: [],
+        image: "amino_acid",
+        catchPhrase: "Organic compounds that combine to form proteins. They are essential for life, and play key roles in the function of the body.",
+        Quote: "'The body is a community made up of its innumerable cells or inhabitants.' - Thomas A. Edison",
+        Category: "Biology"
+        ),
+
+        Concepts(
+        title: "Artificial Intelligence",
+        keyPoints: [],
+        image: "artificial_intelligence",
+        catchPhrase: "The simulation of human intelligence in machines that are programmed to think like humans and mimic their actions.",
+        Quote: "'The question of whether a computer can think is no more interesting than the question of whether a submarine can swim.' - Edsger W. Dijkstra",
+        Category: "Computer Science"
+        ),
+
+        Concepts(
+        title: "Chromosome",
+        keyPoints: [],
+        image: "chromosome",
+        catchPhrase: "A thread-like structure of nucleic acids and protein found in the nucleus of most living cells, carrying genetic information in the form of genes.",
+        Quote: "'Genetics was, I would say, the first part of biology to become a pretty good theoretical subject, based on the theory of the gene and patterns of inheritance of characteristics.' - James D. Watson",
+        Category: "Biology"
+        ),
+
+        Concepts(
+        title: "Machine Learning",
+        keyPoints: [],
+        image: "machine_learning",
+        catchPhrase: "A branch of artificial intelligence based on the idea that systems can learn from data, identify patterns and make decisions with minimal human intervention.",
+        Quote: "'The best way to predict the future is to invent it.' - Alan Kay",
+        Category: "Computer Science"
+        ),
+        
+        Concepts(
+        title: "Neural Network",
+        keyPoints: [],
+        image: "neural_network",
+        catchPhrase: "A series of algorithms that endeavors to recognize underlying relationships in a set of data through a process that mimics the way the human brain operates.",
+        Quote: "'Artificial intelligence would be the ultimate version of Google. The ultimate search engine that would understand everything on the Web. It would understand exactly what you wanted, and it would give you the right thing. We're nowhere near doing that now. However, we can get incrementally closer to that, and that is basically what we work on.' - Larry Page",
+        Category: "Computer Science"
         )
+
     ]
     
         
