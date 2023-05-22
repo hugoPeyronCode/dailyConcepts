@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "non_euclidean_geometry.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

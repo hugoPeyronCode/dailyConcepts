@@ -1,0 +1,15 @@
+{
+  "images" : [
+    {
+      "filename" : "comet-balll-with-fire-tail-moving-in-space.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  },
+  "properties" : {
+    "preserves-vector-representation" : true
+  }
+}

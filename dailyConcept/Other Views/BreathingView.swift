@@ -22,7 +22,7 @@ struct BreathingView: View {
                 
                 Spacer()
                 
-                Text("Meditation")
+                Text("Breathing")
                     .font(.system(size: 31, weight: .bold, design: .serif))
                 
                 Text("Take some time for yourself...")

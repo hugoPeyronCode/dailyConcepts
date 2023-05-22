@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "birthday_paradox.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

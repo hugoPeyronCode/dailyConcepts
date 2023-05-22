@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "domino-effect.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

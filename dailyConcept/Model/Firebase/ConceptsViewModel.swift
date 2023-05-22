@@ -18,7 +18,7 @@ class ConceptsViewModel: ObservableObject {
                 "Interesting Facts: 'If you think you understand quantum mechanics, you don't understand quantum mechanics. - Richard Feynman'",
             ],
             image: "quantum_mechanics",
-            catchPhrase: "A branch of physics explaining the behavior of matter and energy at atomic and subatomic levels.",
+            catchPhrase: "The fascinating field of physics that describes how particles behave and interact at the atomic and subatomic level.",
             Quote: "'If you think you understand quantum mechanics, you don't understand quantum mechanics. - Richard Feynman'",
             Category: "Science"),
         
@@ -44,7 +44,7 @@ class ConceptsViewModel: ObservableObject {
                 "Interesting Facts: 'The term “Oedipus Complex” derives from a character from Greek mythology who unknowingly kills his father and marries his mother.'",
             ],
             image: "figure.2.and.child.holdinghands",
-            catchPhrase: "Childhood feelings of desire for the opposite-sex parent and rivalry with the same-sex parent.",
+            catchPhrase: "Freud's theory of a child's unconscious desire for the opposite-sex parent and rivalry with the same-sex parent.",
             Quote: "'In the Oedipus complex, a boy is fixated on his mother and competes with his father for maternal attention.' - Sigmund Freud",
             Category: "Psychology"
         ),
@@ -57,7 +57,7 @@ class ConceptsViewModel: ObservableObject {
                 "Interesting Facts: 'Kant’s Categorical Imperative is often paraphrased as “Treat others as you would want to be treated.”'",
             ],
             image: "text.book.closed",
-            catchPhrase: "Act only according to maxims that you would want to become universal laws.",
+            catchPhrase: "Kant's moral principle that urges individuals to act in a way that their actions could be universally applicable.",
             Quote: "'Act only according to that maxim whereby you can at the same time will that it should become a universal law.' - Immanuel Kant",
             Category: "Philosophy"
         ),
@@ -70,7 +70,7 @@ class ConceptsViewModel: ObservableObject {
                 "Interesting Facts: '“Cogito ergo sum” is Latin for “I think, therefore I am.”'",
             ],
             image: "figure.mind.and.body",
-            catchPhrase: "One's existence is demonstrated by the fact that one thinks.",
+            catchPhrase: "Descartes's philosophical proposition asserting one's existence through the act of thinking.",
             Quote: "'I think, therefore I am.' - René Descartes",
             Category: "Philosophy"
         ),
@@ -83,7 +83,7 @@ class ConceptsViewModel: ObservableObject {
                 "Interesting Facts: 'Stratification is often characterized by its distinct layers, which are harder to move between.'",
             ],
             image: "pyramid",
-            catchPhrase: "Society's categorization of people into socioeconomic tiers based on factors like wealth, income, race, and power.",
+            catchPhrase: "Society's categorization of people into socioeconomic tiers based on factors: wealth, income, race, and power.",
             Quote: "'The social structure, strict though it may be, is never rigid.' - Jules Romains",
             Category: "Sociology"
         ),
@@ -111,7 +111,7 @@ class ConceptsViewModel: ObservableObject {
                 "Interesting Facts: 'Cognitive dissonance is often used in marketing to influence consumer behavior.'",
             ],
             image: "brain",
-            catchPhrase: "When our actions clash with our beliefs, it's mental tug-of-war time.",
+            catchPhrase: "The unsettling mental conflict arising from holding contradictory beliefs, values, or perceptions simultaneously.",
             Quote: "'Cognitive dissonance is the mental conflict that occurs when beliefs or assumptions are contradicted by new information.' - Leon Festinger",
             Category: "Psychology"
         ),
@@ -124,23 +124,9 @@ class ConceptsViewModel: ObservableObject {
                 "Implications: The allegory represents Plato's philosophical beliefs regarding the nature of reality, knowledge and enlightenment.",
                 "Interesting Facts: 'The Allegory of the Cave can be seen as a metaphor for the human condition itself.'",
             ],
-            image: "plato",
-            catchPhrase: "Stuck seeing shadows? Step out of the cave to see the real world.",
+            image: "cave",
+            catchPhrase: "A metaphorical narrative about how perception can be deceived by shadows, illustrating the journey from ignorance to enlightenment.",
             Quote: "'The things we see are like shadows cast by that which we do not see.' - Plato",
-            Category: "Philosophy"
-        ),
-        
-        Concepts(
-            title: "Kant's Categorical Imperative",
-            keyPoints:  [
-                "Origins: Introduced by the philosopher Immanuel Kant in the 18th century.",
-                "Explanation: Moral obligation that we should act in a way that could be universally applied, irrespective of personal desires.",
-                "Implications: This principle remains a cornerstone of deontological moral philosophy.",
-                "Interesting Facts: 'Kant's moral philosophy is considered one of the most influential contributions to ethical theory.'",
-            ],
-            image: "kants_categorical",
-            catchPhrase: "Act only as you would want all others to act, universally.",
-            Quote: "'Act only according to that maxim whereby you can at the same time will that it should become a universal law.' - Immanuel Kant",
             Category: "Philosophy"
         ),
         
@@ -152,8 +138,8 @@ class ConceptsViewModel: ObservableObject {
                 "Implications: The concept has influenced numerous fields from psychology to political theory, providing a novel lens to understand human motivation.",
                 "Interesting Facts: Despite Nietzsche writing extensively on it, he never dedicated a complete work to the Will to Power, leaving it open to interpretation."
             ],
-            image: "nietzsches_will_to_power",
-            catchPhrase: "Power, the driving force behind human actions.",
+            image: "will_to_power",
+            catchPhrase: "Nietzsche's theory of human motivation driven by the desire for power and dominance.",
             Quote: "'What is good? — All that heightens the feeling of power, the will to power, power itself in man.' - Friedrich Nietzsche",
             Category: "Philosophy"
         ),
@@ -167,7 +153,7 @@ class ConceptsViewModel: ObservableObject {
                 "Interesting Facts: 'The Trolley Problem has been a popular feature in ethics literature and also pop culture.'"
             ],
             image: "trolley_problem",
-            catchPhrase: "Switch the track or stay the course? The moral dilemma of a lifetime!",
+            catchPhrase: "Switch the track or stay the course? Kill one to save many? The  ultimate moral dilemma.",
             Quote: "'The Trolley Problem is a thought experiment in ethics modeling an ethical dilemma.'",
             Category: "Philosophy"
         ),
@@ -181,13 +167,13 @@ class ConceptsViewModel: ObservableObject {
                 "Interesting Facts: 'Maslow later added a sixth level to his hierarchy - self-transcendence, or the pursuit of goals outside oneself.'",
             ],
             image: "maslow_pyramid",
-            catchPhrase: "From a sandwich to self-esteem, Maslow's pyramid outlines our roadmap of needs.",
+            catchPhrase: "Foundational five-tier model outlining the progression of human needs from physiological to self-actualization.",
             Quote: "'What a man can be, he must be. This need we may call self-actualization.' - Abraham Maslow",
             Category: "Psychology"
         ),
         
         Concepts(
-            title: "The Looking Glass Self (Cooley)",
+            title: "The Looking Glass Self",
             keyPoints:  [
                 "Origins: Introduced by sociologist Charles Horton Cooley in 1902.",
                 "Explanation: Suggests that our self-concept and identity are largely influenced by how we believe others perceive us.",
@@ -195,27 +181,27 @@ class ConceptsViewModel: ObservableObject {
                 "Interesting Facts: 'Cooley's work emphasized the societal, not individual, nature of human behavior.'"
             ],
             image: "looking_glass_self",
-            catchPhrase: "The social psychological concept that our self-image is shaped and reflected by how we think others perceive us.",
+            catchPhrase: "Cooley's theory that our self-perception is shaped by our belief about how others view us.",
             Quote: "'I am not who you think I am; I am not who I think I am; I am who I think you think I am.' - Charles Horton Cooley",
             Category: "Sociology"
         ),
         
         Concepts(
-            title: "Functionalism (Durkheim)",
+            title: "Functionalism",
             keyPoints:  [
                 "Origins: Developed by Emile Durkheim, one of the founding fathers of sociology, in the late 19th century.",
                 "Explanation: Functionalism views society as a system where all parts work together to maintain social balance.",
                 "Implications: It provides a lens to view society as an interconnected whole, where change in one element can impact the others.",
                 "Interesting Facts: 'Durkheim’s work emphasized the functional relationships between parts of society.'"
             ],
-            image: "functionalism_durkheim",
-            catchPhrase: "Society is a well-oiled machine—thanks, Durkheim!",
+            image: "gearshape.2",
+            catchPhrase: "Durkheim's vision of society as an interconnected system, with each component playing a crucial role in maintaining societal balance.",
             Quote: "'Society is an organism and each part of it has a function.' - Emile Durkheim",
             Category: "Sociology"
         ),
         
         Concepts(
-            title: "Conflict Theory (Marx)",
+            title: "Marx's Conflict Theory",
             keyPoints:  [
                 "Origins: Developed by Karl Marx in the 19th century as a way to explain social change.",
                 "Explanation: Conflict Theory posits that social groups compete for resources, leading to conflicts that result in societal change.",
@@ -223,13 +209,13 @@ class ConceptsViewModel: ObservableObject {
                 "Interesting Facts: 'Marx’s conflict theory focused on the conflict between two primary classes.'"
             ],
             image: "conflict_theory_marx",
-            catchPhrase: "Life's a struggle for resources—let's talk conflict theory.",
+            catchPhrase: "Unveiling societal change as a product of social groups' competition for resources",
             Quote: "'The history of all hitherto existing society is the history of class struggles.' - Karl Marx",
             Category: "Sociology"
         ),
         
         Concepts(
-            title: "Symbolic Interactionism (Mead)",
+            title: "Mead's Symbolic Interactionism",
             keyPoints:  [
                 "Origins: Developed by George Herbert Mead in the 20th century, it's a major framework of sociological theory.",
                 "Explanation: Symbolic Interactionism suggests that people act towards things based on the meaning those things have for them, and these meanings are derived from social interaction.",
@@ -237,7 +223,7 @@ class ConceptsViewModel: ObservableObject {
                 "Interesting Facts: 'Symbolic interactionism is a micro-level theory that focuses on the relationships among individuals within a society.'"
             ],
             image: "symbolic_interactionism_mead",
-            catchPhrase: "We act based on meanings—welcome to the world of symbolic interaction.",
+            catchPhrase: "Asserting that the meanings derived from social interactions guide our actions.",
             Quote: "'The meaning of a thing for a person grows out of the ways in which other persons act toward the person with regard to the thing.' - George Herbert Mead",
             Category: "Sociology"
         ),
@@ -251,7 +237,7 @@ class ConceptsViewModel: ObservableObject {
                 "Interesting Facts: 'Adam Smith referred to supply and demand as the “invisible hand” that guides the economy.'"
             ],
             image: "supply_and_demand",
-            catchPhrase: "Find the sweet spot in the market with supply and demand!",
+            catchPhrase: "The delicate interplay between availability and desire, balancing the scales of price in the market.",
             Quote: "'The price of anything is between what a buyer is willing to pay and what a seller is willing to accept.' - Common economic principle",
             Category: "Economics"
         ),
@@ -265,7 +251,7 @@ class ConceptsViewModel: ObservableObject {
                 "Interesting Facts: 'Smith only mentioned the phrase “invisible hand” three times across all his writings.'",
             ],
             image: "invisible_hand",
-            catchPhrase: "The market's unseen puppeteer - The Invisible Hand!",
+            catchPhrase: "Adam Smith's unseen market force that directs economic activities through individuals' self-interest.",
             Quote: "'It is not from the benevolence of the butcher, the brewer, or the baker that we expect our dinner, but from their regard to their own interest.' - Adam Smith",
             Category: "Economics"
         ),
@@ -283,7 +269,7 @@ class ConceptsViewModel: ObservableObject {
             title: "Greek Tragedy and Catharsis",
             keyPoints:  [],
 
-            image: "greek_tragedy_catharsis",
+            image: "theatermasks.fill",
             catchPhrase: "Dramatic works provoking emotional release through pity and fear.",
             Quote: "'Tragedy is a representation of a serious, complete action which has magnitude.' - Aristotle",
             Category: "Literature"
@@ -296,15 +282,6 @@ class ConceptsViewModel: ObservableObject {
             catchPhrase: "Artistic movements emphasizing emotion and individualism versus the representation of life as it is.",
             Quote: "'Nature never did betray the heart that loved her.' - William Wordsworth (Romanticism)",
             Category: "Art"
-        ),
-
-        Concepts(
-            title: "The Stream of Consciousness Technique",
-            keyPoints:  [],
-            image: "stream_of_consciousness",
-            catchPhrase: "Literary style emulating the continuous flow of characters' thoughts and feelings.",
-            Quote: "'Life is not a series of gig lamps symmetrically arranged; life is a luminous halo.' - Virginia Woolf",
-            Category: "Literature"
         ),
 
         Concepts(
@@ -380,15 +357,6 @@ class ConceptsViewModel: ObservableObject {
         ),
 
         Concepts(
-            title: "The Theory of Relativity",
-            keyPoints:  [],
-            image: "theory_of_relativity",
-            catchPhrase: "Einstein's theory revolutionizing the understanding of space, time and gravity.",
-            Quote: "'Put your hand on a hot stove for a minute, and it seems like an hour. Sit with a pretty girl for an hour, and it seems like a minute. That's relativity.' - Albert Einstein",
-            Category: "Science"
-        ),
-
-        Concepts(
             title: "The Structure of DNA",
             keyPoints:  [],
             image: "structure_of_dna",
@@ -407,9 +375,9 @@ class ConceptsViewModel: ObservableObject {
         ),
         
         Concepts(
-        title: "Calculus (Newton, Leibniz)",
+        title: "Calculus",
         keyPoints: [],
-        image: "calculus",
+        image: "function",
         catchPhrase: "Mathematical study of continuous change, fundamental to modern physics and other science.",
         Quote: "'If I have seen further it is by standing on the shoulders of Giants.' - Isaac Newton",
         Category: "Mathematics"
@@ -481,7 +449,7 @@ class ConceptsViewModel: ObservableObject {
         Concepts(
         title: "Stanford Prison Experiment",
         keyPoints: [],
-        image: "stanford_prison_experiment",
+        image: "lock",
         catchPhrase: "Psychological study of the human response to captivity, in particular to the real world circumstances of prison life.",
         Quote: "'Power corrupts, and absolute power corrupts absolutely.' - Philip Zimbardo",
         Category: "Psychology"
@@ -549,6 +517,16 @@ class ConceptsViewModel: ObservableObject {
         Quote: "'It is not what is, but what people think it is, that is real.' - William I. Thomas",
         Category: "Sociology"
         ),
+        
+        
+        Concepts(
+            title: "The Theory of Relativity",
+            keyPoints:  [],
+            image: "theory_of_relativity",
+            catchPhrase: "Einstein's theory revolutionizing the understanding of space, time and gravity.",
+            Quote: "'Put your hand on a hot stove for a minute, and it seems like an hour. Sit with a pretty girl for an hour, and it seems like a minute. That's relativity.' - Albert Einstein",
+            Category: "Science"
+        ),
 
         Concepts(
         title: "Merton's Strain Theory",
@@ -562,7 +540,7 @@ class ConceptsViewModel: ObservableObject {
         Concepts(
         title: "Broken Windows Theory",
         keyPoints: [],
-        image: "broken_windows_theory",
+        image: "broken_window",
         catchPhrase: "Criminological theory suggesting that visible signs of disorder and misbehavior in an environment encourage further crime and disorder.",
         Quote: "'One unrepaired broken window is a signal that no one cares, and so breaking more windows costs nothing.' - George L. Kelling",
         Category: "Sociology"
@@ -571,8 +549,8 @@ class ConceptsViewModel: ObservableObject {
         Concepts(
         title: "Durkheim's Anomie",
         keyPoints: [],
-        image: "durkheim_anomie",
-        catchPhrase: "A condition in which society provides little moral guidance to individuals.",
+        image: "spooky",
+        catchPhrase: "In sociology, anomie is a social condition defined by an uprooting or breakdown of any moral values, standards or guidance for individuals to follow.",
         Quote: "'Anomie is the condition in which society provides little moral guidance to individuals.' - Émile Durkheim",
         Category: "Sociology"
         ),
@@ -580,7 +558,7 @@ class ConceptsViewModel: ObservableObject {
         Concepts(
         title: "Matthew Effect",
         keyPoints: [],
-        image: "matthew_effect",
+        image: "dollarsign",
         catchPhrase: "The concept that 'the rich get richer and the poor get poorer'.",
         Quote: "'For to every one who has will more be given, and he will have abundance; but from him who has not, even what he has will be taken away.' - Gospel of Matthew",
         Category: "Sociology"
@@ -623,21 +601,17 @@ class ConceptsViewModel: ObservableObject {
         ),
         
         Concepts(
-        title: "Mundell-Fleming Model",
-        keyPoints: [],
-        image: "mundell_fleming_model",
-        catchPhrase: "An economic model that explains the relationship between interest rates, exchange rates and the trade balance in an open economy.",
-        Quote: "'The only function of economic forecasting is to make astrology look respectable.' - John Kenneth Galbraith",
-        Category: "Economics"
-        ),
-
-        Concepts(
         title: "Iron Triangle",
-        keyPoints: [],
+        keyPoints: [
+        "Origins: The Iron Triangle is a concept originating from project management.",
+        "Explanation: It describes the balance between scope, cost, and time. According to this model, changes to one aspect inevitably impact the others.",
+        "Implications: This concept is widely used in project management to plan, manage and control the constraints of any project.",
+        "Interesting Facts: 'Also known as the Project Management Triangle, or Triple Constraint.'"
+        ],
         image: "iron_triangle",
-        catchPhrase: "Political Science theory implying the policy-making relationship among the congressional committees, the bureaucracy, and interest groups.",
-        Quote: "'In the end, all political systems are subsystems of the biosphere.' - Gaylord Nelson",
-        Category: "Political Science"
+        catchPhrase: "The delicate equilibrium of scope, cost, and time in the world of project management.",
+        Quote: "'Operations keeps the lights on, strategy provides a light at the end of the tunnel, but project management is the train engine that moves the organization forward.' - Joy Gumz",
+        Category: "Project Management"
         ),
 
         Concepts(
@@ -679,7 +653,7 @@ class ConceptsViewModel: ObservableObject {
         Concepts(
         title: "The Hawthorne Effect",
         keyPoints: [],
-        image: "hawthorne_effect",
+        image: "eyes",
         catchPhrase: "The alteration of behavior by the subjects of a study due to their awareness of being observed.",
         Quote: "'We must view young people not as empty bottles to be filled, but as candles to be lit.' - Robert H. Shaffer",
         Category: "Psychology"
@@ -688,15 +662,15 @@ class ConceptsViewModel: ObservableObject {
         Concepts(
         title: "Blue Eyes/Brown Eyes Exercise",
         keyPoints: [],
-        image: "blue_brown_eyes",
+        image: "eye",
         catchPhrase: "An exercise performed by school teacher Jane Elliott, the day after Martin Luther King Jr. was assassinated, to teach her students about racial prejudice.",
         Quote: "'You can't judge a book by its cover, but you can by its color.' - Jane Elliott",
         Category: "Psychology"
         ),
         Concepts(
-        title: "The Rosenthal Effect",
+        title: "The Rosenthal/Pygmalion Effect",
         keyPoints: [],
-        image: "rosenthal_effect",
+        image: "pygmalion_effect",
         catchPhrase: "The phenomenon whereby higher expectations lead to an increase in performance.",
         Quote: "'What one believes to be true either is true or becomes true.' - John Lilly",
         Category: "Psychology"
@@ -705,7 +679,7 @@ class ConceptsViewModel: ObservableObject {
         Concepts(
         title: "Baader-Meinhof Phenomenon",
         keyPoints: [],
-        image: "baader_meinhof",
+        image: "illusion",
         catchPhrase: "The phenomenon where something you recently learned suddenly appears 'everywhere'.",
         Quote: "'We must not allow other people’s limited perceptions to define us.' - Virginia Satir",
         Category: "Psychology"
@@ -714,7 +688,7 @@ class ConceptsViewModel: ObservableObject {
         Concepts(
         title: "Locke's Theory of Mind",
         keyPoints: [],
-        image: "locke_theory_of_mind",
+        image: "perception",
         catchPhrase: "John Locke's model of the human mind suggesting that we are born without innate ideas, and that knowledge is instead determined only by experience derived from sense perception.",
         Quote: "'No man's knowledge here can go beyond his experience.' - John Locke",
         Category: "Philosophy"
@@ -741,7 +715,7 @@ class ConceptsViewModel: ObservableObject {
         Concepts(
         title: "The Problem of Evil",
         keyPoints: [],
-        image: "problem_of_evil",
+        image: "spooky",
         catchPhrase: "A philosophical question related to the existence of God, which asks why evil exists if God is omnipotent and benevolent.",
         Quote: "'Is he willing to prevent evil, but not able? Then is he impotent. Is he able, but not willing? Then is he malevolent.' - Epicurus",
         Category: "Philosophy"
@@ -750,7 +724,7 @@ class ConceptsViewModel: ObservableObject {
         Concepts(
         title: "Spinoza's Pantheism",
         keyPoints: [],
-        image: "spinoza_pantheism",
+        image: "leaf.circle",
         catchPhrase: "Philosophical position of Baruch Spinoza stating that God and the universe are identical, and that there is only one substance in the universe.",
         Quote: "'God is the indwelling and not the transient cause of all things.' - Baruch Spinoza",
         Category: "Philosophy"
@@ -759,7 +733,7 @@ class ConceptsViewModel: ObservableObject {
         Concepts(
         title: "The Sapir-Whorf Hypothesis",
         keyPoints: [],
-        image: "sapir_whorf",
+        image: "speaker.wave.3",
         catchPhrase: "A hypothesis in linguistics stating that the structure of a language affects its speakers' world view or cognition.",
         Quote: "'We dissect nature along lines laid down by our native languages.' - Benjamin Whorf",
         Category: "Linguistics"
@@ -768,7 +742,7 @@ class ConceptsViewModel: ObservableObject {
         Concepts(
         title: "McDonaldization of Society",
         keyPoints: [],
-        image: "mcdonaldization",
+        image: "gear",
         catchPhrase: "George Ritzer's term describing the spread of bureaucratic rationalization and the accompanying increases in efficiency and dehumanization.",
         Quote: "'The irrationality of a thing is no argument against its existence, rather a condition of it.' - Friedrich Nietzsche",
         Category: "Sociology"
@@ -777,7 +751,7 @@ class ConceptsViewModel: ObservableObject {
         Concepts(
         title: "The Culture of Poverty",
         keyPoints: [],
-        image: "culture_of_poverty",
+        image: "chart.line.downtrend.xyaxis",
         catchPhrase: "A social theory suggesting that the values and behaviors of the poor make them fundamentally different from other people and that these factors are largely responsible for their poverty.",
         Quote: "'Poverty is the parent of revolution and crime.' - Aristotle",
         Category: "Sociology"
@@ -786,7 +760,7 @@ class ConceptsViewModel: ObservableObject {
         Concepts(
         title: "Intersectionality",
         keyPoints: [],
-        image: "intersectionality",
+        image: "square.3.layers.3d.down.right.slash",
         catchPhrase: "The study of overlapping or intersecting social identities and related systems of oppression, domination, or discrimination.",
         Quote: "'There is no such thing as a single-issue struggle because we do not live single-issue lives.' - Audre Lorde",
         Category: "Sociology"
@@ -795,7 +769,7 @@ class ConceptsViewModel: ObservableObject {
         Concepts(
         title: "Behavioral Economics",
         keyPoints: [],
-        image: "behavioral_economics",
+        image: "chart.pie",
         catchPhrase: "A field of economics studying the effects of psychological, cognitive, emotional, cultural and social factors on the economic decisions of individuals and institutions.",
         Quote: "'The idea that people are doing what they want to do is such a simple one it seems silly to say it. But it is not.' - Richard Thaler",
         Category: "Economics"
@@ -804,7 +778,7 @@ class ConceptsViewModel: ObservableObject {
         Concepts(
         title: "The Triffin Dilemma",
         keyPoints: [],
-        image: "triffin_dilemma",
+        image: "globe",
         catchPhrase: "The conflict of economic interests that arises between short-term domestic and long-term international objectives for countries whose currencies serve as global reserve currencies.",
         Quote: "'In the international world of finance, gold - not the dollar - is the only means of survival.' - Robert Triffin",
         Category: "Economics"
@@ -827,20 +801,11 @@ class ConceptsViewModel: ObservableObject {
         Quote: "'It is a confusion of ideas to suppose that the economical use of fuel is equivalent to diminished consumption.' - William Stanley Jevons",
         Category: "Economics"
         ),
-
-        Concepts(
-        title: "Theory of Second Best",
-        keyPoints: [],
-        image: "theory_of_second_best",
-        catchPhrase: "In economics, the theory that when a constraint prevents the realization of an optimal economic outcome, the second-best solution might involve changing other variables away from the values that would otherwise be optimal.",
-        Quote: "'The second best is often the enemy of the best.' - Alfred Marshall",
-        Category: "Economics"
-        ),
         
         Concepts(
         title: "Green Theory of Politics",
         keyPoints: [],
-        image: "green_theory_politics",
+        image: "leaf",
         catchPhrase: "An approach to politics that places emphasis on environmental issues and sustainability, guided by principles of ecology, social justice, non-violence, and grassroots democracy.",
         Quote: "'The environment is where we all meet; where we all have a mutual interest; it is the one thing all of us share.' - Lady Bird Johnson",
         Category: "Political Science"
@@ -849,7 +814,7 @@ class ConceptsViewModel: ObservableObject {
         Concepts(
         title: "Soft Power",
         keyPoints: [],
-        image: "soft_power",
+        image: "crown",
         catchPhrase: "A persuasive approach to international relations, typically involving the use of economic or cultural influence.",
         Quote: "'Soft power is not merely the same as influence. After all, influence can also rest on the hard power of threats or payments.' - Joseph Nye",
         Category: "Political Science"
@@ -867,25 +832,16 @@ class ConceptsViewModel: ObservableObject {
         Concepts(
         title: "Realpolitik",
         keyPoints: [],
-        image: "realpolitik",
+        image: "building.columns.fill",
         catchPhrase: "Politics or diplomacy based primarily on considerations of given circumstances and factors, rather than explicit ideological notions or moral and ethical premises.",
         Quote: "'The supreme art of war is to subdue the enemy without fighting.' - Sun Tzu",
         Category: "Political Science"
         ),
 
         Concepts(
-        title: "Intertextuality",
-        keyPoints: [],
-        image: "intertextuality",
-        catchPhrase: "The shaping of a text's meaning by another text, an aspect of postmodern literary criticism and analysis.",
-        Quote: "'Every text is from the outset under the jurisdiction of other discourses which impose a universe on it.' - Julia Kristeva",
-        Category: "Literature"
-        ),
-
-        Concepts(
         title: "Postmodernism",
         keyPoints: [],
-        image: "postmodernism",
+        image: "exclamationmark.questionmark",
         catchPhrase: "A late 20th-century movement characterized by broad skepticism, subjectivism, or relativism; a general suspicion of reason and an acute sensitivity to the role of ideology in asserting and maintaining political and economic power.",
         Quote: "'The postmodern would be that which, in the modern, puts forward the unpresentable in presentation itself.' - Jean-François Lyotard",
         Category: "Philosophy"
@@ -894,7 +850,7 @@ class ConceptsViewModel: ObservableObject {
         Concepts(
         title: "Byronic Hero",
         keyPoints: [],
-        image: "byronic_hero",
+        image: "iron_man",
         catchPhrase: "An antihero of the highest order, a character type based on the life and works of Lord Byron, characterized by his brooding and rebellious nature.",
         Quote: "'I stood among them, but not of them.' - Lord Byron",
         Category: "Literature"
@@ -903,43 +859,25 @@ class ConceptsViewModel: ObservableObject {
         Concepts(
         title: "Post-colonial Literature",
         keyPoints: [],
-        image: "post_colonial_literature",
+        image: "books.vertical",
         catchPhrase: "Literature by authors from formerly colonized countries, focusing on the issues and consequences of decolonization.",
         Quote: "'The past is a foreign country: they do things differently there.' - L.P. Hartley",
         Category: "Literature"
         ),
 
         Concepts(
-        title: "The Death of the Author",
-        keyPoints: [],
-        image: "death_of_the_author",
-        catchPhrase: "A concept from mid-20th-century literary criticism, emphasizing the creator's disassociation from their creation and the interpretation of their work.",
-        Quote: "'The birth of the reader must be at the cost of the death of the Author.' - Roland Barthes",
-        Category: "Literature"
-        ),
-
-        Concepts(
         title: "Baroque Period",
         keyPoints: [],
-        image: "baroque_period",
+        image: "baroque",
         catchPhrase: "An artistic style that used exaggerated motion and clear, easily interpreted detail to produce drama, tension, exuberance, and grandeur in sculpture, painting, architecture, literature, dance, theatre, and music.",
         Quote: "'To me, Baroque is the burning bush of music: it removes the shoes from my feet.' - Jordi Savall",
         Category: "Art"
         ),
 
         Concepts(
-        title: "Arts and Crafts Movement",
-        keyPoints: [],
-        image: "arts_and_crafts_movement",
-        catchPhrase: "An international movement in the decorative and fine arts that stood for traditional craftsmanship using simple forms, and often used medieval, romantic, or folk styles of decoration.",
-        Quote: "'Simplicity and repose are the qualities that measure the true value of any work of art.' - Frank Lloyd Wright",
-        Category: "Art"
-        ),
-
-        Concepts(
         title: "Vienna Secession",
         keyPoints: [],
-        image: "vienna_secession",
+        image: "vienna",
         catchPhrase: "An art movement formed in 1897 by a group of Austrian artists who had resigned from the Association of Austrian Artists, featuring artists such as Gustav Klimt, and brought a new, modernist spirit to the traditional art scene.",
         Quote: "'All art is erotic.' - Gustav Klimt",
         Category: "Art"
@@ -957,10 +895,10 @@ class ConceptsViewModel: ObservableObject {
         Concepts(
         title: "Schrödinger's Cat",
         keyPoints: [],
-        image: "schrodinger_cat",
+        image: "cat",
         catchPhrase: "A thought experiment, often described as a paradox, devised by Austrian physicist Erwin Schrödinger in 1935, illustrating the problem of the Copenhagen interpretation of quantum mechanics applied to everyday objects.",
         Quote: "'I don't like it, and I'm sorry I ever had anything to do with it.' - Erwin Schrödinger",
-        Category: "Physics"
+        Category: "Science"
         ),
 
         Concepts(
@@ -975,19 +913,19 @@ class ConceptsViewModel: ObservableObject {
         Concepts(
         title: "The Gaia Hypothesis",
         keyPoints: [],
-        image: "gaia_hypothesis",
+        image: "globe.europe.africa.fill",
         catchPhrase: "A theory suggesting that living organisms interact with their inorganic surroundings on Earth to form a synergistic and self-regulating, complex system that helps to maintain and perpetuate the conditions for life on the planet.",
         Quote: "'The entire range of living matter on Earth from whales to viruses and from oaks to algae could be regarded as constituting a single living entity.' - James Lovelock",
-        Category: "Biology"
+        Category: "Science"
         ),
 
         Concepts(
         title: "Tectonic Plate Theory",
         keyPoints: [],
-        image: "tectonic_plate_theory",
+        image: "tectonic_plates",
         catchPhrase: "A scientific theory describing the large-scale motion of seven large plates and the movements of a larger number of smaller plates of the Earth's lithosphere.",
         Quote: "'The history of any one part of the Earth, like the life of a soldier, consists of long periods of boredom and short periods of terror.' - Derek Ager",
-        Category: "Geology"
+        Category: "Science"
         ),
         
         Concepts(
@@ -1020,18 +958,9 @@ class ConceptsViewModel: ObservableObject {
         Concepts(
         title: "Blue Ocean Strategy",
         keyPoints: [],
-        image: "blue_ocean_strategy",
+        image: "water.waves",
         catchPhrase: "A business strategy that targets untapped market space (the 'blue ocean'), rather than competing with other businesses in an existing industry (the 'red ocean').",
         Quote: "'Competing in overcrowded industries is no way to sustain high performance.' - W. Chan Kim & Renée Mauborgne",
-        Category: "Business"
-        ),
-
-        Concepts(
-        title: "Total Quality Management",
-        keyPoints: [],
-        image: "total_quality_management",
-        catchPhrase: "A management approach that seeks to improve quality and performance to meet or exceed customer expectations.",
-        Quote: "'Quality is everyone's responsibility.' - W. Edwards Deming",
         Category: "Business"
         ),
 
@@ -1095,7 +1024,7 @@ class ConceptsViewModel: ObservableObject {
         image: "servant_leadership",
         catchPhrase: "A leadership philosophy in which the goal of the leader is to serve. This is different from traditional leadership where the leader's main focus is the thriving of their company or organizations.",
         Quote: "'The best leaders are those most interested in surrounding themselves with assistants and associates smarter than they are.' - John C. Maxwell",
-        Category: "Leadership"
+        Category: "Business"
         ),
 
         Concepts(
@@ -1104,7 +1033,7 @@ class ConceptsViewModel: ObservableObject {
         image: "blooms_taxonomy",
         catchPhrase: "A set of three hierarchical models used to classify educational learning objectives into levels of complexity and specificity.",
         Quote: "'Education is the process in which we discover that learning adds quality to our lives.' - William Glasser",
-        Category: "Education"
+        Category: "Psychology"
         ),
 
         Concepts(
@@ -1128,19 +1057,10 @@ class ConceptsViewModel: ObservableObject {
         Concepts(
         title: "Prisoner's Dilemma",
         keyPoints: [],
-        image: "prisoners_dilemma",
+        image: "lock",
         catchPhrase: "A standard example of a game analyzed in game theory that shows why two completely rational individuals might not cooperate, even if it appears that it is in their best interest to do so.",
         Quote: "'Rational behavior... depends on a large number of factors that are not directly observable.' - John Forbes Nash, Jr.",
-        Category: "Game Theory"
-        ),
-
-        Concepts(
-        title: "Tragedy of the Commons",
-        keyPoints: [],
-        image: "tragedy_of_the_commons",
-        catchPhrase: "A situation in a shared-resource system where individual users, acting independently according to their own self-interest, behave contrary to the common good of all users by depleting or spoiling the shared resource through their collective action.",
-        Quote: "'Every man is to be respected as an absolute end in himself; and it is a crime against the dignity that belongs to him as a human being, to use him as a mere means for some external purpose.' - Immanuel Kant",
-        Category: "Economics"
+        Category: "Psychology"
         ),
 
         Concepts(
@@ -1155,7 +1075,7 @@ class ConceptsViewModel: ObservableObject {
         Concepts(
         title: "Infinity",
         keyPoints: [],
-        image: "infinity",
+        image: "infinity_ring",
         catchPhrase: "A concept in many fields, most predominantly mathematics and physics, that refers to a quantity without bound or end.",
         Quote: "'To see a world in a grain of sand and heaven in a wild flower Hold infinity in the palm of your hand and eternity in an hour.' - William Blake",
         Category: "Mathematics"
@@ -1167,7 +1087,7 @@ class ConceptsViewModel: ObservableObject {
         image: "balance_of_power",
         catchPhrase: "A concept in international relations that suggests that national security is enhanced when military capability is distributed so that no one state is strong enough to dominate all others.",
         Quote: "'We have learned that power does not necessarily mean security.' - Harry S. Truman",
-        Category: "Politics"
+        Category: "Political Science"
         ),
 
         Concepts(
@@ -1176,7 +1096,7 @@ class ConceptsViewModel: ObservableObject {
         image: "amino_acid",
         catchPhrase: "Organic compounds that combine to form proteins. They are essential for life, and play key roles in the function of the body.",
         Quote: "'The body is a community made up of its innumerable cells or inhabitants.' - Thomas A. Edison",
-        Category: "Biology"
+        Category: "Science"
         ),
 
         Concepts(
@@ -1185,7 +1105,7 @@ class ConceptsViewModel: ObservableObject {
         image: "artificial_intelligence",
         catchPhrase: "The simulation of human intelligence in machines that are programmed to think like humans and mimic their actions.",
         Quote: "'The question of whether a computer can think is no more interesting than the question of whether a submarine can swim.' - Edsger W. Dijkstra",
-        Category: "Computer Science"
+        Category: "Science"
         ),
 
         Concepts(
@@ -1194,7 +1114,7 @@ class ConceptsViewModel: ObservableObject {
         image: "chromosome",
         catchPhrase: "A thread-like structure of nucleic acids and protein found in the nucleus of most living cells, carrying genetic information in the form of genes.",
         Quote: "'Genetics was, I would say, the first part of biology to become a pretty good theoretical subject, based on the theory of the gene and patterns of inheritance of characteristics.' - James D. Watson",
-        Category: "Biology"
+        Category: "Science"
         ),
 
         Concepts(
@@ -1203,7 +1123,7 @@ class ConceptsViewModel: ObservableObject {
         image: "machine_learning",
         catchPhrase: "A branch of artificial intelligence based on the idea that systems can learn from data, identify patterns and make decisions with minimal human intervention.",
         Quote: "'The best way to predict the future is to invent it.' - Alan Kay",
-        Category: "Computer Science"
+        Category: "Science"
         ),
         
         Concepts(
@@ -1212,11 +1132,9 @@ class ConceptsViewModel: ObservableObject {
         image: "neural_network",
         catchPhrase: "A series of algorithms that endeavors to recognize underlying relationships in a set of data through a process that mimics the way the human brain operates.",
         Quote: "'Artificial intelligence would be the ultimate version of Google. The ultimate search engine that would understand everything on the Web. It would understand exactly what you wanted, and it would give you the right thing. We're nowhere near doing that now. However, we can get incrementally closer to that, and that is basically what we work on.' - Larry Page",
-        Category: "Computer Science"
+        Category: "Science"
         )
-
     ]
-    
         
     var uniqueCategories: [String] {
         var seen = Set<String>()
@@ -1226,13 +1144,13 @@ class ConceptsViewModel: ObservableObject {
             return concept.Category
         }
     }
-
     
     // Add this property to track the selected categories
     @Published var selectedCategories: [String] = []
     
     // Computed property to get the concepts for the selected categories
     var filteredConcepts: [Concepts] {
+                        
         if selectedCategories.isEmpty {
             // If no categories are selected, return all concepts
             return concepts

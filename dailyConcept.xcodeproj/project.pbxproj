@@ -13,7 +13,6 @@
 		430A81B22A010534003167D6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 430A81B12A010534003167D6 /* Preview Assets.xcassets */; };
 		430A81B92A0105BE003167D6 /* ConceptView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430A81B82A0105BE003167D6 /* ConceptView.swift */; };
 		430A81BB2A0120B1003167D6 /* ConceptFirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430A81BA2A0120B1003167D6 /* ConceptFirstView.swift */; };
-		430A81BD2A01395B003167D6 /* Concept.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430A81BC2A01395B003167D6 /* Concept.swift */; };
 		430A81C02A013B9B003167D6 /* ConceptSecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430A81BF2A013B9B003167D6 /* ConceptSecondView.swift */; };
 		430A81C22A0146A4003167D6 /* SwipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430A81C12A0146A4003167D6 /* SwipeView.swift */; };
 		4322325C2A14DB84001FC7D0 /* CategoryPatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4322325B2A14DB84001FC7D0 /* CategoryPatch.swift */; };
@@ -49,7 +48,6 @@
 		430A81B12A010534003167D6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		430A81B82A0105BE003167D6 /* ConceptView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConceptView.swift; sourceTree = "<group>"; };
 		430A81BA2A0120B1003167D6 /* ConceptFirstView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConceptFirstView.swift; sourceTree = "<group>"; };
-		430A81BC2A01395B003167D6 /* Concept.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Concept.swift; sourceTree = "<group>"; };
 		430A81BF2A013B9B003167D6 /* ConceptSecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConceptSecondView.swift; sourceTree = "<group>"; };
 		430A81C12A0146A4003167D6 /* SwipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeView.swift; sourceTree = "<group>"; };
 		4322325B2A14DB84001FC7D0 /* CategoryPatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryPatch.swift; sourceTree = "<group>"; };
@@ -135,7 +133,6 @@
 			isa = PBXGroup;
 			children = (
 				43AC274E2A0A8FB70036BC7C /* Firebase */,
-				430A81BC2A01395B003167D6 /* Concept.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -331,7 +328,6 @@
 				43AC27322A03F16F0036BC7C /* HapticFeedback.swift in Sources */,
 				43AC276F2A0E813F0036BC7C /* BuyPremiumButton.swift in Sources */,
 				43AC27712A0E8F160036BC7C /* BuyPremiumView.swift in Sources */,
-				430A81BD2A01395B003167D6 /* Concept.swift in Sources */,
 				4322325C2A14DB84001FC7D0 /* CategoryPatch.swift in Sources */,
 				43AC27572A0D16320036BC7C /* QuizView.swift in Sources */,
 				430A81C02A013B9B003167D6 /* ConceptSecondView.swift in Sources */,

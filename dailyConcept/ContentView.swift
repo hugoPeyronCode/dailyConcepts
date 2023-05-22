@@ -48,6 +48,7 @@ struct ContentView: View {
             .sheet(isPresented: $showingUserProfile) { UserProfileView() }
             .sheet(isPresented: $showingBuyPremium) { BuyPremiumView() }
         }
+    
     }
 }
 

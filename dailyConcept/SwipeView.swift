@@ -11,7 +11,7 @@ struct SwipeView: View {
     
     @ObservedObject var viewModel: ConceptsViewModel
     @State private var currentPage: Int = 0
-    
+        
     var body: some View {
         
         GeometryReader { screen in
@@ -47,7 +47,6 @@ struct SwipeView: View {
                         
                     }
                 }
-                
             }
             .frame(width: screen.size.height, height: screen.size.width)
             .rotationEffect(.degrees(90), anchor: .topLeading)

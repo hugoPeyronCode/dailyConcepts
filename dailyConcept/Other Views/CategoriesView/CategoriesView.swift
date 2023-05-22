@@ -46,18 +46,19 @@ struct CategoriesView: View {
     
     var categoriesGrid: some View {
         LazyVGrid(columns: gridItems, spacing: 15) {
-            CategoryButton(content: "All", isSelected: viewModel.selectedCategories.contains("All") , action: {
+            CategoryButton(content: "All", isSelected: viewModel.selectedCategories.contains("All"), isUnlock: true , action: {
                 viewModel.selectedCategories = []
             })
-            CategoryButton(content: "Favorites", isSelected: viewModel.selectedCategories.contains("Favorites"), action: {})
+            CategoryButton(content: "Favorites", isSelected: viewModel.selectedCategories.contains("Favorites"), isUnlock: false, action: {})
             
             ForEach(Array(viewModel.uniqueCategories), id: \.self) { category in
                 CategoryButton(content: category,
                                isSelected: viewModel.selectedCategories.contains(category),
+                               isUnlock: false,
                                action: {
-                        print(viewModel.selectedCategories)
-                        viewModel.selectedCategories.append(category)
-                    })
+                    print(viewModel.selectedCategories)
+                    viewModel.selectedCategories.append(category)
+                })
             }
         }
         .padding(.horizontal, 20)
